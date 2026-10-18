@@ -7,22 +7,22 @@ pipeline {
 
   stages{
     stage('Checkout'){
-      step{
+      steps{
         git 'https://github.com/asamaranayake/my-second-cicd-app.git'
       }
     }
     stage('Install'){
-      step{
+      steps{
         sh 'npm install'
       }
     }
     stage('Test'){
-      step{
+      steps{
         sh 'npm test'
       }
     }
     stage('Run'){
-      step{
+      steps{
         sh 'npm start'
       }
     }
