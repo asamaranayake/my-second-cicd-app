@@ -8,7 +8,7 @@ pipeline {
   stages{
     stage('Checkout'){
       steps{
-        git 'https://github.com/asamaranayake/my-second-cicd-app.git'
+        checkout scm
       }
     }
     stage('Install'){
