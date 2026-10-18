@@ -1,4 +1,4 @@
-pipeline{
+pipeline {
   agent any 
 
   tools{
@@ -26,8 +26,6 @@ pipeline{
         sh 'npm start'
       }
     }
-    
-
   }
-
+}
   
